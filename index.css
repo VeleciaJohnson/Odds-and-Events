@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Times New Roman", Times, serif;
+  background: white;
+  color: black;
+}
+
+main {
+  width: 100%;
+  margin: 0;
+  padding: 56px 30px;
+}
+
+h1 {
+  margin: 0 0 26px;
+  color: black;
+  font-size: 2.5rem;
+}
+
+h2 {
+  margin: 26px 0 24px;
+  font-size: 1.9rem;
+}
+
+.instructions {
+  margin: 0;
+}
+
+/* Keep the form items on one line like the image */
+form {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+label {
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+
+input {
+  width: 182px;
+  height: 26px;
+  padding: 1px 4px;
+  border: 1px solid #767676;
+  border-radius: 2px;
+  background: white;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+button {
+  height: 26px;
+  padding: 1px 7px;
+  border: 1px solid #767676;
+  border-radius: 3px;
+  background: #efefef;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e5e5e5;
+}
+
+/* Remove the white-card appearance */
+.card {
+  margin-top: 0;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* The large outlined containers in the image */
+.number-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 46px;
+  gap: 10px;
+  padding: 8px 10px;
+  border: 1px solid black;
+  border-radius: 11px;
+  background: white;
+}
+
+/* Numbers are plain text, not blue boxes */
+.number {
+  display: inline;
+  min-width: 0;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  color: black;
+  font-weight: normal;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.empty-message {
+  margin: 0;
+  color: black;
+  font-style: normal;
+}
+
+.button-group {
+  display: flex;
+  gap: 5px;
+  margin-top: 0;
+}
+
+/* Odds and Evens appear one below another */
+.sorted-sections {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 30px 20px;
+  }
+
+  form {
+    flex-wrap: wrap;
+  }
+
+  input {
+    width: 182px;
+  }
+}
